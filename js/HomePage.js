@@ -6,6 +6,7 @@ $(document).ready(function () {
     const login = document.getElementById('logIn');
     const signup = document.getElementById('singUp');
     const logout = document.getElementById('logOut');
+    var email;
     $('#msgDiv').hide()
 
     login.addEventListener('click',e=>{
@@ -43,6 +44,9 @@ $(document).ready(function () {
     })
 
     firebase.auth().onAuthStateChanged(firebaseUser=>{
+        email = firebaseUser.email;
+        console.log("is it here? "+email);
+
         if(firebaseUser)
         {
             console.log(firebaseUser);
@@ -62,6 +66,16 @@ $(document).ready(function () {
 
     $('#mainPgBtn').click(function (params) {
         location.href="MainPage.html";
+    })
+
+    $('#logOut').click(function () {
+        firebase.auth().signOut().then(function () {
+            // Sign-out successful.
+            location.reload();
+            location.href = 'HomePage.html'
+        }, function (error) {
+            // An error happened.
+        });
     })
 
 })

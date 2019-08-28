@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/MainPage.css">
 
   <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
@@ -15,83 +15,99 @@
 
 
   <title>Main Page</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 
+<body>
 
-<center>
-  </div>
-  <div>
-    <p style="font-size: 25px">Please selec the target currency: </p>
-    <select id="currOpt" data-toggle="dropdown" style="margin-right: 10px">
-      <option value="USD" selected>United States Dollar (USD)</option>
-      <option value="EUR">Euro (EUR)</option>
-      <option value="ILS">Israeli New Sheqel (ILS)</option>
-    </select>
-
-    <button id="selectCurr">Select</button>
+  <div class="navbar">
+    <a href="#home" id="logOutBtn" style="background-color: darkblue">Log Out</a>
+    <div class="dropdown">
+      <button class="dropbtn">Options
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#">change profile picture</a>
+      </div>
+    </div>
   </div>
 
   <center>
-    <table id="rateTable">
-      <tr>
-        <th>Symbol</th>
-        <th>Name</th>
-        <th>Rate</th>
-      </tr>
-      <tr>
-        <td><img src="Icons/BTC.png"></td>
-        <td>Bitcoin (BTC)</td>
-        <td id="BTCrate">50</td>
-      </tr>
-      <tr>
-        <td><img src="Icons/BCH.png"></td>
-        <td>Bitcoin Cash (BCH)</td>
-        <td id="BCHrate">94</td>
-      </tr>
-      <tr>
-        <td> <img src="Icons/ADA.png"> </td>
-        <td>Cardano (ADA)</td>
-        <td id="ADArate">80</td>
-      </tr>
-      <tr>
-        <td> <img src="Icons/EOS.png"> </td>
-        <td>EOS</td>
-        <td id="EOSrate">80</td>
-      </tr>
-      <tr>
-        <td> <img src="Icons/Ethereum.png"> </td>
-        <td>Ethereum (Ether)</td>
-        <td id="ETHrate">80</td>
-      </tr>
-      <tr>
-        <td> <img src="Icons/IOTA.png"> </td>
-        <td>IOTA</td>
-        <td id="MIOTArate">80</td>
-      </tr>
-      <tr>
-        <td> <img src="Icons/Litecoin.png"> </td>
-        <td>Litecoin (LTC)</td>
-        <td id="LTCrate">80</td>
-      </tr>
-      <tr>
-        <td> <img src="Icons/NEO.png"> </td>
-        <td>NEO</td>
-        <td id="NEOrate">80</td>
-      </tr>
-      <tr>
-        <td> <img src="Icons/Ripple.png"> </td>
-        <td>Ripple (XRP)</td>
-        <td id="XRPrate">80</td>
-      </tr>
-      <tr>
-        <td> <img src="Icons/Stellar.png"> </td>
-        <td>Stellar (XLM)</td>
-        <td id="XLMrate">80</td>
-      </tr>
+    <div>
+      <p style="font-size: 25px">Please selec the target currency: </p>
+      <select id="currOpt" data-toggle="dropdown" style="margin-right: 10px">
+        <option value="USD" selected>United States Dollar (USD)</option>
+        <option value="EUR">Euro (EUR)</option>
+        <option value="ILS">Israeli New Sheqel (ILS)</option>
+      </select>
 
-    </table>
+      <button id="selectCurr">Select</button>
+    </div>
 
-    <table id="secondaryTable" style="width: 50%;margin-top:20px">
+    <center>
+
+      <table id="rateTable">
+        <tr>
+          <th>Symbol</th>
+          <th>Name</th>
+          <th>Rate</th>
+        </tr>
+        <tr>
+          <td><img src="Icons/BTC.png"></td>
+          <td>Bitcoin (BTC)</td>
+          <td id="BTCrate">50</td>
+        </tr>
+        <tr>
+          <td><img src="Icons/BCH.png"></td>
+          <td>Bitcoin Cash (BCH)</td>
+          <td id="BCHrate">94</td>
+        </tr>
+        <tr>
+          <td> <img src="Icons/ADA.png"> </td>
+          <td>Cardano (ADA)</td>
+          <td id="ADArate">80</td>
+        </tr>
+        <tr>
+          <td> <img src="Icons/EOS.png"> </td>
+          <td>EOS</td>
+          <td id="EOSrate">80</td>
+        </tr>
+        <tr>
+          <td> <img src="Icons/Ethereum.png"> </td>
+          <td>Ethereum (Ether)</td>
+          <td id="ETHrate">80</td>
+        </tr>
+        <tr>
+          <td> <img src="Icons/IOTA.png"> </td>
+          <td>IOTA</td>
+          <td id="MIOTArate">80</td>
+        </tr>
+        <tr>
+          <td> <img src="Icons/Litecoin.png"> </td>
+          <td>Litecoin (LTC)</td>
+          <td id="LTCrate">80</td>
+        </tr>
+        <tr>
+          <td> <img src="Icons/NEO.png"> </td>
+          <td>NEO</td>
+          <td id="NEOrate">80</td>
+        </tr>
+        <tr>
+          <td> <img src="Icons/Ripple.png"> </td>
+          <td>Ripple (XRP)</td>
+          <td id="XRPrate">80</td>
+        </tr>
+        <tr>
+          <td> <img src="Icons/Stellar.png"> </td>
+          <td>Stellar (XLM)</td>
+          <td id="XLMrate">80</td>
+        </tr>
+
+      </table>
+
+      <!-- <table id="secondaryTable" style="width: 50%;margin-top:20px">
         <tr>
           <th>Name</th>
           <th>Rate</th>
@@ -105,30 +121,37 @@
   <div id="dispDiv">
     <p >cant find the cryptocurrency you are looking for?<br> use the following <a href="https://coinlayer.com/symbols">link</a> to find the symbol of the desired cryptocurrency and type it below: </p>
     <input type="email" id="notOnListTxt"> <button id="notOnListBtn">Select</button>
-  </div>
+  </div>-->
+
+      <div>
+        <input type="file" id="fileupload">
+      </div>
+      <div>
+        <button id="test"></button>
+      </div>
+
+</body>
 
 
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase.js"></script>
 
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAsVep5MtCty4LrDtuIptjxl8zVqVNNcgk",
+    authDomain: "acvbhb-dc482.firebaseapp.com",
+    databaseURL: "https://acvbhb-dc482.firebaseio.com",
+    projectId: "acvbhb-dc482",
+    storageBucket: "acvbhb-dc482.appspot.com",
+    messagingSenderId: "512098023051",
+    appId: "1:512098023051:web:afdfe6f9d8a66821"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
 
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase.js"></script>
-
-  <script>
-    // Your web app's Firebase configuration
-    var firebaseConfig = {
-      apiKey: "AIzaSyAsVep5MtCty4LrDtuIptjxl8zVqVNNcgk",
-      authDomain: "acvbhb-dc482.firebaseapp.com",
-      databaseURL: "https://acvbhb-dc482.firebaseio.com",
-      projectId: "acvbhb-dc482",
-      storageBucket: "acvbhb-dc482.appspot.com",
-      messagingSenderId: "512098023051",
-      appId: "1:512098023051:web:afdfe6f9d8a66821"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-  </script>
-
-  <script src="scriptMP.js"></script>
+<script src="js/MainPage.js"></script>
 </center>
 </body>
 
