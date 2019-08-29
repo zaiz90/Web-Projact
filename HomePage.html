@@ -14,50 +14,50 @@
   <link href="https://fonts.googleapis.com/css?family=Acme|Indie+Flower&display=swap" rel="stylesheet">
 
 
-  <title>homepage</title>
+  <title>Home Page</title>
 </head>
 
-
-<center>
-  <div class="logInMainDIv">
-    <img src="cryptocurrency.jpg">
-    <h3 style="font-size: 25px">Welcome To Crypto Rates </h3>
-    <input id="emailTxt" type="email" placeholder="Email">
-    <div>
-      <input id="passTxt" type="password" placeholder="Password"> </div>
-    <div style="margin-top: 5px">
-      <button id="logIn">Log In </button>
-      <button id="singUp">Sing Up</button>
-      <button id="logOut">Log Out</button>
+<body>
+  <center>
+    <div class="logInMainDIv">
+      <img src="Icons/cryptocurrency.jpg">
+      <h3 style="font-size: 25px">Welcome To Crypto Rates </h3>
+      <input id="emailTxt" type="email" placeholder="Email">
+      <div>
+        <input id="passTxt" type="password" placeholder="Password"> </div>
+      <div style="margin-top: 5px">
+        <button id="logIn">Log In </button>
+        <button id="singUp">Sing Up</button>
+        <button id="logOut">Log Out</button>
+      </div>
+      <div id="msgDiv">
+        <p id="msg"></p>
+        <button id="mainPgBtn">Continue</button>
+      </div>
     </div>
-    <div id="msgDiv">
-      <p id="msg"></p>
-      <button id="mainPgBtn">Continue</button>
-    </div>
-  </div>
 
 
 
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase.js"></script>
 
-  <script>
-    // Your web app's Firebase configuration
-    var firebaseConfig = {
-      apiKey: "AIzaSyAsVep5MtCty4LrDtuIptjxl8zVqVNNcgk",
-      authDomain: "acvbhb-dc482.firebaseapp.com",
-      databaseURL: "https://acvbhb-dc482.firebaseio.com",
-      projectId: "acvbhb-dc482",
-      storageBucket: "acvbhb-dc482.appspot.com",
-      messagingSenderId: "512098023051",
-      appId: "1:512098023051:web:afdfe6f9d8a66821"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-  </script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAsVep5MtCty4LrDtuIptjxl8zVqVNNcgk",
+        authDomain: "acvbhb-dc482.firebaseapp.com",
+        databaseURL: "https://acvbhb-dc482.firebaseio.com",
+        projectId: "acvbhb-dc482",
+        storageBucket: "acvbhb-dc482.appspot.com",
+        messagingSenderId: "512098023051",
+        appId: "1:512098023051:web:afdfe6f9d8a66821"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
 
-  <script src="js/HomePage.js"></script>
-</center>
+    <script src="js/HomePage.js"></script>
+  </center>
 </body>
 
 </html>

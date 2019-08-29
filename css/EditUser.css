@@ -107,3 +107,13 @@ button:hover{
       margin-top: 3px;
       margin-left: 5px;
   }
+
+  #satatsDiv{
+margin-top: 20px;
+}
+
+  #largeUserIcon{
+      height: 280px;
+      width: 220px;
+      border-radius: 100%;
+  }
