@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Acme|Indie+Flower&display=swap" rel="stylesheet">
+
+
+  <title>A</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="navbar" id="navBar">
+    <a href="#logOut" id="logOutBtn" style="background-color: darkblue">Log Out</a>
+    <a href="../MainPage.html" id="mainPaigBtn" style="background-color: black">Main page</a>
+    <div class="dropdown" id="navBar2">
+      <button class="dropbtn">Options
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="EditUser.html" id="editUser">Edit Profile</a>
+      </div>
+    </div>
+  </div>
+
+  <center>
+    <div>
+      <p style="font-size: 25px">Please selec the target currency: </p>
+      <select id="currOpt" data-toggle="dropdown" style="margin-right: 10px">
+        <option value="USD" selected>United States Dollar (USD)</option>
+        <option value="EUR">Euro (EUR)</option>
+        <option value="ILS">Israeli New Sheqel (ILS)</option>
+      </select>
+
+      <button id="selectCurr">Select</button>
+    </div>
+
+    <center>
+      <div id="tableDiv">
+        <p style="font-size: 30px;color: orangered;">A:</p>
+        <table id="rateTable">
+          <tr>
+            <th>Name</th>
+            <th>Rate</th>
+          </tr>
+          <tr>
+            <td>AB-Chain</td>
+            <td id="ABC-rate">50</td>
+          </tr>
+          <tr>
+            <td>Anarchists Prime</td>
+            <td id="ACP-rate">94</td>
+          </tr>
+          <tr>
+            <td>ACT</td>
+            <td id="ACT-rate">80</td>
+          </tr>
+          <tr>
+            <td>Cardano</td>
+            <td id="ADA-rate">80</td>
+          </tr>
+          <tr>
+            <td>Asiadigicoin</td>
+            <td id="ADCN-rate">80</td>
+          </tr>
+          <tr>
+            <td>Adelphoi</td>
+            <td id="ADL-rate">80</td>
+          </tr>
+          <tr>
+            <td>AdEx</td>
+            <td id="ADX-rate">80</td>
+          </tr>
+          <tr>
+            <td>Adzcoin</td>
+            <td id="ADZ-rate">80</td>
+          </tr>
+          <tr>
+            <td>Aeternity</td>
+            <td id="AE-rate">80</td>
+          </tr>
+          <tr>
+            <td>AdvancedInternetBlock</td>
+            <td id="AIB-rate">80</td>
+          </tr>
+          <tr>
+            <td>AI Doctor</td>
+            <td id="AIDOC-rate">80</td>
+          </tr>
+          <tr>
+            <td>Aion</td>
+            <td id="AION-rate">80</td>
+          </tr>
+          <tr>
+            <td>AirToken</td>
+            <td id="AIR-rate">80</td>
+          </tr>
+          <tr>
+            <td>ALTcoin</td>
+            <td id="ALT-rate">80</td>
+          </tr>
+          <tr>
+            <td>Ambrosus</td>
+            <td id="AMB-rate">80</td>
+          </tr>
+          <tr>
+            <td>MicroMoney</td>
+            <td id="AMM-rate">80</td>
+          </tr>
+          <tr>
+            <td>Aragon</td>
+            <td id="ANT-rate">80</td>
+          </tr>
+          <tr>
+            <td>AlpaCoin</td>
+            <td id="APC-rate">80</td>
+          </tr>
+          <tr>
+            <td>AppCoins</td>
+            <td id="APPC-rate">80</td>
+          </tr>
+          <tr>
+            <td>ArcticCoin</td>
+            <td id="ARC-rate">80</td>
+          </tr>
+          <tr>
+            <td>ArbitrageCT</td>
+            <td id="ARCT-rate">80</td>
+          </tr>
+          <tr>
+            <td>Ardor</td>
+            <td id="ARDR-rate">80</td>
+          </tr>
+          <tr>
+            <td>ARK</td>
+            <td id="ARK-rate">80</td>
+          </tr>
+          <tr>
+            <td>Aeron</td>
+            <td id="ARN-rate">80</td>
+          </tr>
+          <tr>
+            <td>Allsafe</td>
+            <td id="ASAFE2-rate">80</td>
+          </tr>
+          <tr>
+            <td>AirSwap</td>
+            <td id="AST-rate">80</td>
+          </tr>
+          <tr>
+            <td>ATB coin</td>
+            <td id="ATB-rate">80</td>
+          </tr>
+          <tr>
+            <td>ATMChain</td>
+            <td id="ATM-rate">80</td>
+          </tr>
+          <tr>
+            <td>Aureus</td>
+            <td id="AURS-rate">80</td>
+          </tr>
+          <tr>
+            <td>AventCoin</td>
+            <td id="AVT-rate">80</td>
+          </tr>
+
+
+        </table>
+      </div>
+
+</body>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAsVep5MtCty4LrDtuIptjxl8zVqVNNcgk",
+    authDomain: "acvbhb-dc482.firebaseapp.com",
+    databaseURL: "https://acvbhb-dc482.firebaseio.com",
+    projectId: "acvbhb-dc482",
+    storageBucket: "acvbhb-dc482.appspot.com",
+    messagingSenderId: "512098023051",
+    appId: "1:512098023051:web:afdfe6f9d8a66821"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+<script src="A.js"></script>
+</center>
+</body>
+
+</html>

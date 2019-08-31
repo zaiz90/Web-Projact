@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Acme|Indie+Flower&display=swap" rel="stylesheet">
+
+
+  <title>C</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="navbar" id="navBar">
+    <a href="#logOut" id="logOutBtn" style="background-color: darkblue">Log Out</a>
+    <a href="../MainPage.html" id="mainPaigBtn" style="background-color: black">Main page</a>
+    <div class="dropdown" id="navBar2">
+      <button class="dropbtn">Options
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="EditUser.html" id="editUser">Edit Profile</a>
+      </div>
+    </div>
+  </div>
+
+  <center>
+    <div>
+      <p style="font-size: 25px">Please selec the target currency: </p>
+      <select id="currOpt" data-toggle="dropdown" style="margin-right: 10px">
+        <option value="USD" selected>United States Dollar (USD)</option>
+        <option value="EUR">Euro (EUR)</option>
+        <option value="ILS">Israeli New Sheqel (ILS)</option>
+      </select>
+
+      <button id="selectCurr">Select</button>
+    </div>
+
+    <center>
+      <div id="tableDiv">
+        <p style="font-size: 30px;color: orangered;">C:</p>
+        <table id="rateTable" style="margin-top: 25px">
+          <tr>
+            <th style="margin-right: 20px">Name</th>
+            <th>Rate</th>
+          </tr>
+          <tr>
+            <td>CaliphCoin</td>
+            <td id="CALC-rate">50</td>
+          </tr>
+          <tr>
+            <td>Cashaa</td>
+            <td id="CAS-rate">94</td>
+          </tr>
+          <tr>
+            <td>BlockCAT</td>
+            <td id="CAT-rate">80</td>
+          </tr>
+          <tr>
+            <td>CryptoCarbon</td>
+            <td id="CCRB-rate">80</td>
+          </tr>
+          <tr>
+            <td>CoinDash</td>
+            <td id="CDT-rate">80</td>
+          </tr>
+          <tr>
+            <td>Crypto Escudo0</td>
+            <td id="CESC-rate">80</td>
+          </tr>
+          <tr>
+            <td>ChatCoin</td>
+            <td id="CHAT-rate">80</td>
+          </tr>
+          <tr>
+            <td>CryptoJacks</td>
+            <td id="CJ-rate">80</td>
+          </tr>
+          <tr>
+            <td>CoinLancer</td>
+            <td id="CL-rate">80</td>
+          </tr>
+          <tr>
+            <td>Cloud</td>
+            <td id="CLD-rate">80</td>
+          </tr>
+          <tr>
+            <td>CloakCoin</td>
+            <td id="CLOAK-rate">80</td>
+          </tr>
+          <tr>
+            <td>Cindicator</td>
+            <td id="CND-rate">80</td>
+          </tr>
+          <tr>
+            <td>Cryptonex</td>
+            <td id="CNX-rate">80</td>
+          </tr>
+          <tr>
+            <td>CapriCoin</td>
+            <td id="CPC-rate">80</td>
+          </tr>
+          <tr>
+            <td>CraveCoin</td>
+            <td id="CRAVE-rate">80</td>
+          </tr>
+          <tr>
+            <td>CrowdCoin</td>
+            <td id="CRC-rate">80</td>
+          </tr>
+          <tr>
+            <td>Credits</td>
+            <td id="CRE-rate">80</td>
+          </tr>
+          <tr>
+            <td>Crown Coin</td>
+            <td id="CRW-rate">80</td>
+          </tr>
+          <tr>
+            <td>Crypto</td>
+            <td id="CTO-rate">80</td>
+          </tr>
+          <tr>
+            <td>Centra</td>
+            <td id="CTR-rate">80</td>
+          </tr>
+        </table>
+      </div>
+
+</body>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAsVep5MtCty4LrDtuIptjxl8zVqVNNcgk",
+    authDomain: "acvbhb-dc482.firebaseapp.com",
+    databaseURL: "https://acvbhb-dc482.firebaseio.com",
+    projectId: "acvbhb-dc482",
+    storageBucket: "acvbhb-dc482.appspot.com",
+    messagingSenderId: "512098023051",
+    appId: "1:512098023051:web:afdfe6f9d8a66821"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+<script src="C.js"></script>
+</center>
+</body>
+
+</html>

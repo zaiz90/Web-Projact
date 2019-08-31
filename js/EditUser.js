@@ -38,7 +38,7 @@ $(document).ready(function () {
         });
     })
 
-    $('#testBtn').click(function () {
+    $('#saveBtn').click(function () {
         location.reload()
     });
 

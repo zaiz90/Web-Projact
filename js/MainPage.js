@@ -2,9 +2,7 @@
 $(document).ready(function () {
 
     var curr = document.getElementById('currOpt');
-    var notOnListCurr = document.getElementById('notOnListTxt');
     var email;
-    var userPic = "Icons/2.jpg";
 
     firebase.auth().onAuthStateChanged(function (user) {
         userPhoto = user.photoURL;
@@ -15,8 +13,7 @@ $(document).ready(function () {
         $('#navBar2').prepend('<div id="emailC">' + email + '</div>');
     });
 
-    $('#rateTable').hide();
-    //$('userIcon').attr('src','Icons/2.jpg');
+    $('#tableDiv').hide();
 
 
     $('#selectCurr').click(function () {
@@ -38,7 +35,7 @@ $(document).ready(function () {
                     $('#NEOrate').text(data.rates.NEO);
                     $('#XLMrate').text(data.rates.XLM);
                     $('#XRPrate').text(data.rates.XRP);
-                    $('#rateTable').show();
+                    $('#tableDiv').show();
 
                 }
                 else {
@@ -55,35 +52,6 @@ $(document).ready(function () {
         });
 
 
-    })
-
-    $('#notOnListBtn').click(function () {
-        if (notOnListCurr.value == '') {
-            console.log('empty');
-        }
-        else {
-            $.ajax({
-                url: 'http://api.coinlayer.com/api/live?access_key=2c0b3b1184d5bf7caa13f5204cfec840&target=' + curr.value + '&symbols=' + notOnListCurr.value,
-                type: 'GET',
-                success: function (data) {
-                    console.log(data);
-                    if (data.success == true) {
-                        $('#secondaryName').text(notOnListCurr.value);
-                        $('#secondaryRate').text(data.rates);
-                        console.log(data.rates);
-
-                    }
-                    else {
-                        console.log("fail");
-                    }
-
-                },
-                error: e => {
-                    console.log('error' + e.message);
-                }
-            });
-        }
-        console.log(notOnListCurr.value);
     })
 
     $('#logOutBtn').click(function () {
