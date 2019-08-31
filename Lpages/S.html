@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Acme|Indie+Flower&display=swap" rel="stylesheet">
+
+
+  <title>S</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="navbar" id="navBar">
+    <a href="#logOut" id="logOutBtn" style="background-color: darkblue">Log Out</a>
+    <a href="../MainPage.html" id="mainPaigBtn" style="background-color: black">Main page</a>
+    <div class="dropdown" id="navBar2">
+      <button class="dropbtn">Options
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="EditUser.html" id="editUser">Edit Profile</a>
+      </div>
+    </div>
+  </div>
+
+  <center>
+    <div>
+      <p style="font-size: 25px">Please selec the target currency: </p>
+      <select id="currOpt" data-toggle="dropdown" style="margin-right: 10px">
+        <option value="USD" selected>United States Dollar (USD)</option>
+        <option value="EUR">Euro (EUR)</option>
+        <option value="ILS">Israeli New Sheqel (ILS)</option>
+      </select>
+
+      <button id="selectCurr">Select</button>
+    </div>
+
+    <center>
+        <div id="tableDiv">
+            <p style="font-size: 30px;color: orangered;">S:</p>
+      <table id="rateTable">
+        <tr>
+          <th>Name</th>
+          <th>Rate</th>
+        </tr>
+        <tr>
+          <td>Salt Lending</td>
+          <td id="SALT-rate">50</td>
+        </tr>
+        <tr>
+          <td>Santiment</td>
+          <td id="SAN-rate">94</td>
+        </tr>
+        <tr>
+          <td>StableCoin</td>
+          <td id="SBC-rate">80</td>
+        </tr>
+        <tr>
+          <td>Siacoin</td>
+          <td id="SC-rate">80</td>
+        </tr>
+        <tr>
+          <td>Sentinel</td>
+          <td id="SENT-rate">80</td>
+        </tr>
+        <tr>
+          <td>Shift</td>
+          <td id="SHIFT-rate">80</td>
+        </tr>
+        <tr>
+          <td>SibCoin</td>
+          <td id="SIB-rate">80</td>
+        </tr>
+        <tr>
+          <td>SmartCash</td>
+          <td id="SMART-rate">80</td>
+        </tr>
+        <tr>
+          <td>SmileyCoin</td>
+          <td id="SMLY-rate">80</td>
+        </tr>
+        <tr>
+          <td>SunContract</td>
+          <td id="SNC-rate">80</td>
+        </tr>
+        <tr>
+          <td>SingularDTV</td>
+          <td id="SNGLS-rate">80</td>
+        </tr>
+        <tr>
+          <td>SONM</td>
+          <td id="SNM-rate">80</td>
+        </tr>
+        <tr>
+          <td>Status Network Token</td>
+          <td id="SNT-rate">80</td>
+        </tr>
+        <tr>
+          <td>Sparks</td>
+          <td id="SPK-rate">80</td>
+        </tr>
+        <tr>
+          <td>SirinLabs</td>
+          <td id="SRN-rate">80</td>
+        </tr>
+        <tr>
+          <td>Steem</td>
+          <td id="STEEM-rate">80</td>
+        </tr>
+        <tr>
+          <td>STK Token</td>
+          <td id="STK-rate">80</td>
+        </tr>
+        <tr>
+          <td>Storj</td>
+          <td id="STORJ-rate">80</td>
+        </tr>
+        <tr>
+          <td>Stratis</td>
+          <td id="STRAT-rate">80</td>
+        </tr>
+        <tr>
+          <td>Stox</td>
+          <td id="STX-rate">80</td>
+        </tr>
+        <tr>
+          <td>Substratum Network</td>
+          <td id="SUB-rate">80</td>
+        </tr>
+        <tr>
+          <td>Suretly</td>
+          <td id="SUR-rate">80</td>
+        </tr>
+        <tr>
+          <td>SwftCoin</td>
+          <td id="SWFTC-rate">80</td>
+        </tr>
+        <tr>
+          <td>SysCoin</td>
+          <td id="SYS-rate">80</td>
+        </tr>
+      </table>
+    </div>
+
+</body>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAsVep5MtCty4LrDtuIptjxl8zVqVNNcgk",
+    authDomain: "acvbhb-dc482.firebaseapp.com",
+    databaseURL: "https://acvbhb-dc482.firebaseio.com",
+    projectId: "acvbhb-dc482",
+    storageBucket: "acvbhb-dc482.appspot.com",
+    messagingSenderId: "512098023051",
+    appId: "1:512098023051:web:afdfe6f9d8a66821"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+<script src="S.js"></script>
+</center>
+</body>
+
+</html>
